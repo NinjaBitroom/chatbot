@@ -50,7 +50,11 @@ def executar(prompt):
 
 if __name__ == '__main__':
     print('=' * 80)
-    conversa = ''
+    try:
+        conversa = open('conversa.txt', 'r', encoding='utf-8').read()
+        print(conversa)
+    except FileNotFoundError:
+        conversa = ''
     while True:
         prompt = input('usuario: ').strip()
         conversa += 'usuario: '+prompt+'\n'
@@ -58,3 +62,4 @@ if __name__ == '__main__':
         resposta = executar(prompt_completo).strip()
         conversa += 'assistente: '+resposta+'\n'
         print('assistente: '+resposta)
+        open('conversa.txt', 'w', encoding='utf-8').write(conversa)

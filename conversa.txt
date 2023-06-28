@@ -1,0 +1,8 @@
+usuario: teste
+assistente: Você está testando a capacidade do assistente virtual. Você pode continuar com suas perguntas.
+usuario: som
+assistente: O som é uma vibração mecânica produzida por um objeto ou um sistema.
+usuario: 123
+assistente: O número 123 é um número inteiro.
+usuario: o que?
+assistente: O número 123 é um número inteiro.
