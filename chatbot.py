@@ -50,14 +50,11 @@ def executar(prompt):
 
 if __name__ == '__main__':
     print('=' * 80)
-    conversas = []
+    conversa = ''
     while True:
         prompt = input('usuario: ').strip()
-        conversas.append(('usuario', prompt))
-        prompt_completo = contexto
-        for conversa in conversas:
-            prompt_completo += conversa[0]+': '+conversa[1]+'\n'
-        prompt_completo += 'assistente:'
+        conversa += 'usuario: '+prompt+'\n'
+        prompt_completo = contexto+conversa+'assistente:'
         resposta = executar(prompt_completo).strip()
-        conversas.append(('assistente', resposta))
-        print(conversas[-1][0]+': '+conversas[-1][1])
+        conversa += 'assistente: '+resposta+'\n'
+        print('assistente: '+resposta)
