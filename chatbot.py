@@ -1,6 +1,6 @@
 import ai21
 
-ai21.api_key = 'dDG2hQfD5KPjyi3dugkSkDPxqz6Xm1rF'
+ai21.api_key = 'SUA CHAVE SECRETA'
 
 contexto = """Um assistente virtual que sabe de tudo. Tudo que o usuario pede o assistente responde.
 usuario: conte uma curiosidade
